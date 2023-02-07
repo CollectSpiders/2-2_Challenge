@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #00539CFF;
+  --peach: #EEA47FFF;
+}
+
+body {
+  background: #141414;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(C:\Users\mathe\OneDrive\Desktop\School\UofO-VIRT-FSF-PT-01-2023-U-LOLC\02-Advanced-CSS\02-Challenge\Main\assets\images\PXL_20220813_171441703.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block; 
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+
+}
+
+/* portfolio project images */
+.logo {
+  width: 514px; /* 3024px */
+  height: 685px; /* 4032px */
+}
+
+/* end portfolio project images */
