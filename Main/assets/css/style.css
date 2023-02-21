@@ -6,24 +6,32 @@
 }
 
 :root {
-  --blue: #00539CFF;
-  --peach: #EEA47FFF;
+  --liteblue: #8ecae6;
+  --blue: #219ebc; 
+  --darkblue: #023047;
+  --liteorange: #ffb703; 
+  --orange: #fb8500;
 }
 
 body {
-  background: #141414;
+  display:flex;
+  background: var(--darkblue);
 }
 
 #header {
+  display: flex;
   width: 100%;
-  height: 100vh;
-  background-image: url(C:\Users\mathe\OneDrive\Desktop\School\UofO-VIRT-FSF-PT-01-2023-U-LOLC\02-Advanced-CSS\02-Challenge\Main\assets\images\PXL_20220813_171441703.jpg);
+  height: 36vh;
+  background-image: url('../images/02-hero-bg.jpg');
   background-size: cover;
   background-position: center;
+  margin-top: 10px;
 }
 
-.container {
-  padding: 10px 10%;
+#container {
+  display: flex;
+  padding: 10px 10%;  
+  flex-direction: column;
 }
 
 nav {
@@ -33,20 +41,108 @@ nav {
   flex-wrap: wrap;
 }
 
-nav ul li {
-  display: inline-block; 
+nav ul {
+  display: block; 
   list-style: none;
   margin: 10px 20px;
+  background-color: var(--liteorange);
+  width: 147px;
+}
+
+nav li {
+  padding: 10px 20px;
+  display: inline-block; 
 }
 
 nav ul li a {
-
+  color: var(--darkblue);
+  text-decoration: none;
+  font-size: 20px;
+  margin: 3px 3px;
 }
 
-/* portfolio project images */
-.logo {
-  width: 514px; /* 3024px */
-  height: 685px; /* 4032px */
+nav ul li {
+  width: 100%;
+  height: 30px;
+  left: 0;
+  bottom: -6px;
 }
 
-/* end portfolio project images */
+.header-text {
+  margin-top: none;
+  font-size: 28px;
+  color: var(--liteorange);
+}
+
+.header-text h1 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.shadow {
+  text-decoration: none;
+  font-size: 20px;
+  text-shadow: 1px 4px 4px #242424;
+}
+
+.description {
+  margin: 17px 15px;
+  padding: 3px;
+}
+
+div #seperator {
+  display: flex;
+  margin-top: -14px;
+  height: 14px;
+  width: 100%;
+  background-color: var(--orange);
+}
+
+div #seperator2 {
+  display: flex;
+  margin-top: 14px;
+  height: 14px;
+  width: 100%;
+  background-color: var(--orange);
+}
+
+#projectList  {
+  display: flex;
+  gap: 2rem;
+  grid-row-start: auto;
+  text-shadow: 1px 4px 4px #242424;
+}
+
+.projects {
+  padding: 10px;
+  color: var(--liteorange);
+  text-shadow: 2px 4px 4px #242424;
+}
+
+.link-color {
+  color: var(--orange);
+}
+
+.footnote {
+  color: var(--liteorange);
+}
+
+/* images, pictures */
+.profilepic {
+  width: 514px; /* width: 6000px height: 4000px */
+  height: 685px; 
+}
+
+.firstProjectImage {
+  width: 255px; /* 1500px 1004px */
+  height: 171px;
+}
+
+/*
+  how to set up profile.pdf
+
+
+
+
+
+*/
